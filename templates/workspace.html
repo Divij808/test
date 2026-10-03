@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoch — Workspace</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">E</div>
+            <div>
+                <h1>Epoch</h1>
+                <span>AI Study Workspace</span>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-label">SOURCES</div>
+
+            <form action="{{ url_for('upload') }}" method="POST"
+                  enctype="multipart/form-data" class="upload-form">
+                <label class="upload-box">
+                    <input type="file" name="file" accept=".pdf,.txt" required>
+                    <strong>＋ Add source</strong>
+                    <small>PDF or TXT</small>
+                </label>
+                <button class="primary-btn" type="submit">Upload source</button>
+            </form>
+
+            <div class="source-list">
+                {% for source in sources %}
+                <div class="source-item">
+                    <div class="source-icon">▤</div>
+                    <div class="source-info">
+                        <strong title="{{ source.filename }}">
+                            {{ source.filename }}
+                        </strong>
+                        <small>{{ source.chunks }} chunks</small>
+                    </div>
+
+                    <form action="{{ url_for('delete_source', source_id=source.id) }}"
+                          method="POST">
+                        <button class="delete-btn" title="Delete source">×</button>
+                    </form>
+                </div>
+                {% else %}
+                <div class="empty-sources">
+                    No sources yet.
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="model-status">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>Local AI</strong>
+                    <small>{{ model }}</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <span class="eyebrow">PERSONAL KNOWLEDGE ENGINE</span>
+                <h2>Study workspace</h2>
+            </div>
+            <div class="local-pill"><span class="status-dot"></span>Running locally</div>
+        </header>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <div class="messages">
+                {% for category, message in messages %}
+                    <div class="message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endwith %}
+
+        <section class="workspace">
+
+            <div class="card ask-card">
+                <div class="card-heading">
+                    <div>
+                        <span class="card-kicker">ASK EPOCH</span>
+                        <h3>Ask questions about your sources</h3>
+                    </div>
+                    <span class="icon">?</span>
+                </div>
+
+                <form id="ask-form">
+                    <div class="input-row">
+                        <input
+                            id="question"
+                            name="question"
+                            type="text"
+                            placeholder="e.g. What is the difference between RAM and ROM?"
+                            autocomplete="off"
+                        >
+                        <button class="primary-btn" type="submit">Ask</button>
+                    </div>
+                </form>
+
+                <div id="answer-area" class="answer-area hidden">
+                    <div class="answer-label">EPOCH'S ANSWER</div>
+                    <div id="answer" class="answer-text"></div>
+                    <div id="answer-sources" class="answer-sources"></div>
+                </div>
+            </div>
+
+            <div class="generation-grid">
+
+                <div class="card action-card">
+                    <div class="action-icon">▣</div>
+                    <h3>Summary</h3>
+                    <p>Condense your sources into focused revision material.</p>
+                    <button class="secondary-btn generate-btn" data-action="summary">
+                        Generate summary
+                    </button>
+                </div>
+
+                <div class="card action-card">
+                    <div class="action-icon">☷</div>
+                    <h3>Study Notes</h3>
+                    <p>Transform your documents into structured notes.</p>
+                    <button class="secondary-btn generate-btn" data-action="notes">
+                        Generate notes
+                    </button>
+                </div>
+
+                <div class="card action-card">
+                    <div class="action-icon">▤</div>
+                    <h3>Flashcards</h3>
+                    <p>Generate MCQ and written-answer revision cards.</p>
+                    <button class="secondary-btn generate-btn" data-action="flashcards">
+                        Generate cards
+                    </button>
+                </div>
+
+                <div class="card action-card">
+                    <div class="action-icon">?</div>
+                    <h3>Practice Questions</h3>
+                    <p>Create questions to test your understanding.</p>
+                    <button class="secondary-btn generate-btn" data-action="questions">
+                        Generate questions
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="result-card" class="card result-card hidden">
+                <div class="card-heading">
+                    <div>
+                        <span class="card-kicker">GENERATED MATERIAL</span>
+                        <h3 id="result-title">Result</h3>
+                    </div>
+                    <button id="close-result" class="close-btn">×</button>
+                </div>
+                <div id="result-content"></div>
+            </div>
+
+        </section>
+
+    
+    </main>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

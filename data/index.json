@@ -1,0 +1,302 @@
+[
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 0,
+    "text": "1 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Syllabus Content: 1.2 Multimedia Graphics Show understanding of how data for a bitmapped image are encoded Use and understand the terms: pixel, file header, image resolution, screen resolution, colour depth, bit depth Perform calculations to estimate the file size for a bitmap image Show understanding of the effects of changing elements of a bitmap image on the image quality and file size Use the terms: image resolution, colour depth Show understanding of how data for a vector graphic are encoded Use the terms: drawing object, property, drawing list Justify the use of a bitmap image or a vector graphic for a given task Graphic images that have been processed by a computer can usually be divided into two distinct"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 1,
+    "text": "of a bitmap image or a vector graphic for a given task Graphic images that have been processed by a computer can usually be divided into two distinct categories. Such images are either bitmap files or vector graphics. This section will cover the two main image types: vector and bitmap(pixels), along with some compression techniques. Pixel (Picture element): The smallest possible addressable area defined by a solid color, represented as binary, in an image. 2 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Graphics on a screen are made up of tiny blocks of pixels. The more pixels on the screen, the higher the resolution and the better the quality of the picture will be. The higher the image resolution, the more memory is needed to store the graphic. Image files can be"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 2,
+    "text": "nd the better the quality of the picture will be. The higher the image resolution, the more memory is needed to store the graphic. Image files can be either bitmaps or vectors. Bitmap Graphics: Bitmaps images are exactly what their name says they are: a collection of bits that form an image. Bitmap images (or raster) images are stored as a series of tiny dots called pixels. Each pixel is actually a very small square that is assigned a color, and then arranged in a pattern to form the image. The image consists of a matrix of individual dots (or pixels (picture element)) that all have their own color (described using bits, the smallest possible units of information for a computer). Bitmap images are organised as a grid of coloured squares called pixels (short for 'picture elements'). When zooming in or enlarging a bitmap image, the pixels are stretched and made into larger blocks. This is"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 3,
+    "text": "led pixels (short for 'picture elements'). When zooming in or enlarging a bitmap image, the pixels are stretched and made into larger blocks. This is why bitmap images appear as poor quality when enlarged too much. Each colour of an image is stored as a binary number. In the black-and-white image below, each pixel is either black or white. You need a binary value for each different 3 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org colour.As each pixel is either black or white, this image can be encoded with a value of 0 for white and 1 for black. When you zoom in on a bitmap image you can see the individual pixels that make up that image. Bitmap graphics can be edited by erasing or changing the color of individual pixels using a program such as Adobe Photoshop. Pixel"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 4,
+    "text": "ake up that image. Bitmap graphics can be edited by erasing or changing the color of individual pixels using a program such as Adobe Photoshop. Pixel (Picture element): The smallest possible addressable area defined by a solid color, represented as binary, in an image. File header: BMP, PCX, JPEG, FLI/FLC, and AVI files include headers that define the image size, number of colors, and other information needed to display the image. Fastgraph provides functions for reading the image headers and retrieving their more useful items. However, there may be times when you need additional information stored in the file header e.g. Confirmation that the file is a BMP File size Location/offset of image data within the file Dimensions of the image (in pixels) // image resolution Colour depth (bits per pixel, 1, 4, 8, 16, 24 or 32) Type of compression used, if any 4 Email: majidtahir61@gmail.com"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 5,
+    "text": "(in pixels) // image resolution Colour depth (bits per pixel, 1, 4, 8, 16, 24 or 32) Type of compression used, if any 4 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Resolution: Screen Resolution - The screen resolution tells you how many pixels your screen can display horizontally and vertically. It's written in the form 1024 x 768. In this example, the screen can show 1,024 pixels horizontally, and 768 vertically: Image Resolution - how many pixels do an image contains per inch/cm? Measurements of dots per inch (dpi) are called image resolution. The number of pixels per unit measurement or the number of pixels in an image or The number of pixels wide by the number of pixels high or number of pixels per row by the number of rows Resolution refers to the number of"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 6,
+    "text": "image or The number of pixels wide by the number of pixels high or number of pixels per row by the number of rows Resolution refers to the number of pixels in an image. Resolution is sometimes identified by the width and height of the image as well as the total number of pixels in the image. For example, an image that is 2048 pixels wide and 1536 pixels high (2048 x 1536) contains (multiply) 3,145,728 pixels (or 3.1 Megapixels). The higher the resolution, the more pixels are available. Therefore the crisper the picture Colour depth The colour depth of an image is measured in bits. The number of bits indicates how many colours are available for each pixel. In the black and white image, only two colours are needed. This means it has a colour depth of 1 bit. 5 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 7,
+    "text": "our depth of 1 bit. 5 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org A 2-bit colour depth would allow four different values: 00, 01, 10, 11. This would allow for a range of colours such as: Greater the colour depth (bits per pixel), the more colours are available. Colour depth Available colours 1-bit 21 = 2 2-bit 22 = 4 3-bit 23 = 8 4-bit 24 = 16 5-bit 25 = 32 6-bit 26 = 64 7-bit 27 = 128 8-bit 28 = 256 Example: Calculating screen resolutions & Picture file size: Using the diagram above we are going to work out how many pixels are required to display a single frame on a VGA screen. Checking the resolution: Binary code Colour 00 White 01 Light grey 10 Dark grey 11 Black 6 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 8,
+    "text": "our 00 White 01 Light grey 10 Dark grey 11 Black 6 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Height = 480 Width = 640 Area = Width x Height = Total Pixels Area = 640 x 480 = 307200 pixels Hence, it takes 307,200 pixels to display on a VGA screen! File size = Total Pixels X Colour Depth Coloured Images: At least eight bits per pixel are necessary to code a coloured image. The number of bits per pixel is sometimes referred to as the colour depth. (8 bits or 1 byte for 1 pixel in coloured image) (Computer Science Book) Hence, it takes 307,200 pixels X 8 bits = 2457600 bits or 2457600/8 = 307200 bytes or 300KB. Monochrome or Black & White image: The simplest option is to use one bit to represent the colour, so that the pixel is either black or white. (1 bit for 1"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 9,
+    "text": "hrome or Black & White image: The simplest option is to use one bit to represent the colour, so that the pixel is either black or white. (1 bit for 1 pixel in Black & White or monochrome Picture) Greyscale image: Storage of the colour in four bits would allow simple greyscale colouring. (4 bits for 1 pixel in GreyScale image) Greyscale Coloured Images: At least eight bits per pixel are necessary to code a coloured image. The number of bits per pixel is sometimes referred to as the colour depth. (8 bits or 1 byte for 1 pixel in coloured image) (Computer Science Book) 24 bits almost always uses 8 bits of each of RGB(Red:8 Green:8 Blue:8) 8+8+8 = 24 As of 2018 24-bit color depth is used by virtually every computer and phone display and the vast majority of image storage formats. (Wikipedia) Vector graphics It is normal for an image that is created by a drawing package or a computer-aided"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 10,
+    "text": "ast majority of image storage formats. (Wikipedia) Vector graphics It is normal for an image that is created by a drawing package or a computer-aided design (CAD) package to consist of a number of geometric objects. The outcome is then usually for the image to be stored as a vector graphic file 7 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Unlike bitmaps, vector images are not based on pixel patterns, but instead use mathematical formulas to draw lines and curves that can be combined to create an image Vector graphics are made from geometric objects such as circles and polygons. Vector images are edited by manipulating the lines and curves that make up the image using a program such as Adobe Illustrator. Vector images tend to be smaller than bitmap images because a"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 11,
+    "text": "the lines and curves that make up the image using a program such as Adobe Illustrator. Vector images tend to be smaller than bitmap images because a bitmap image has to store color information for each individual pixel that forms the image. A vector image just has to store the mathematical formulas that make up the image, which take up less space. The three most popular image formats used on the Web (PNG, JPEG, and GIF) are bitmap formats. The Scalable Vector Graphics (SVG) format comes in a distant fourth due to a legacy of poor support for vector graphics in early browsers. Today however, all major browsers support the SVG (Scalable Vector Graphics) format. The dimensions of the vector image objects are not defined explicitly but instead are defined relative to an imaginary drawing canvas. In other words, the image is scalable. Bitmap formats are best for images that need to have a"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 12,
+    "text": "ad are defined relative to an imaginary drawing canvas. In other words, the image is scalable. Bitmap formats are best for images that need to have a wide range of color gradations, such as most photographs. Vector formats, on the other hand, are better for images that consist of a few areas of solid color. Examples of images that are well suited for the vector format include logos and type. Vector graphic: a graphic consisting of components defined by geometric formulae and associated properties, such as line colour and style. 8 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org We do not need to consider how an image of this type would be created. We do need to consider how the data is stored after the image has been created. Drawing list: - a set of commands used to"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 13,
+    "text": "this type would be created. We do need to consider how the data is stored after the image has been created. Drawing list: - a set of commands used to define a vector image. A vector graphic file contains a drawing list. The list contains a command for each object included in the image. Each command has a list of attributes that define the properties of the object. Drawing Properties: -The properties include the basic geometric data such as, for a circle, the position of the centre and its radius. In addition properties such as the thickness and style of a line, the colour of a line and the colour that fills the shape, if that is appropriate, are defined. An example of what could be created as a vector graphic file is shown in Figure. Vector graphics are made up of objects and their properties. Drawing object: - is a mathematical or geometrically defined construct such as a rectangle,"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 14,
+    "text": "tor graphics are made up of objects and their properties. Drawing object: - is a mathematical or geometrically defined construct such as a rectangle, line or circle. Image display When a monitor or a printer displays a vector image it is rasterised- converted into a grid of pixels. Regardless of the file type, an image will always be outputted onto a screen or printed in pixels. Comparison between vector and bitmaps: This image illustrates the difference between bitmap and vector images. The bitmap image is composed of a fixed set of dots (pixels), while the vector image is composed of 9 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org a fixed set of shapes. In the picture, scaling the bitmap reveals the pixels and scaling the vector image preserves the shapes. Vector"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 15,
+    "text": "www.fiqar.org a fixed set of shapes. In the picture, scaling the bitmap reveals the pixels and scaling the vector image preserves the shapes. Vector images scale without file size increase / decrease Bitmap images scale resulting in file size increase / decrease Vector images scale without distortion to the image Bitmap images distort (pixelate) when scaling Bitmaps are better for photo editing Bitmaps require less processing power to display One of the most common vector file formats is scalable vector graphics (SVG). SVG is an open standard for vector graphics. It is possible to edit SVG images using numbers to change the size and colour variables in HTML. This is often used for graphs and infographics in HTML5. Vector graphics are used in:  CAD packages  AutoShapes in Microsoft Office  animated movies  encapsulated postscript (EPS)  animation programmes such as Blender and"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 16,
+    "text": "used in:  CAD packages  AutoShapes in Microsoft Office  animated movies  encapsulated postscript (EPS)  animation programmes such as Blender and Adobe After Effects  image manipulation programmes such as Adobe Photoshop and GIMP  Adobe portable document format (PDF)  Windows meta-file (WMF) Syllabus Content: 1.3 Sound Candidates should be able to: Show understanding of how sound is represented and encoded Use the terms: sampling, sampling rate, sampling resolution, analogue and digital data Show understanding of the impact of changing the sampling rate and resolution Impact on file size and accuracy 10 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org (1.1.3) Sound: Sound is an oscillation of pressure transmitted through a solid, liquid, or gas (there is no sound"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 17,
+    "text": "8 with Majid Tahir at www.fiqar.org (1.1.3) Sound: Sound is an oscillation of pressure transmitted through a solid, liquid, or gas (there is no sound in outer space as space is a vacuum and there is no solid, liquid or gas to transmit sound through!). A speaker works by moving its center cone in and out; this causes the air particles to bunch together forming waves. These waves spread out from the speaker travelling at 340 m/s. If your ear is in the way, then the waves of sound particles will collide with your ear drum, vibrating it and sending a message to your brain. This is how you hear: Natural sound consists of variations in pressure which is detected by the human ear. A typical sound contains a large number of individual waves each with a defined frequency. The result is a wave form in which the amplitude of the sound varies in a continuous but irregular pattern. If there is a"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 18,
+    "text": "h with a defined frequency. The result is a wave form in which the amplitude of the sound varies in a continuous but irregular pattern. If there is a need to store sound or transmit it electronically the original analogue sound signal has to be converted to a binary code. A sound encoder has two components. 1. Band limiting Filter 2. Analogue to digital converter. Band-limiting filter: This is needed to remove high-frequency components. The ear would not be able to detect these and they could cause problems for the coding if not removed. Analogue-to-digital converter (ADC). The method of operation of the ADC is described with reference to Figure. The amplitude of the wave (the red line) has to be sampled at regular intervals. The blue vertical lines indicate the sampling times. The amplitude cannot be measured exactly; instead the amplitude is approximated by the closest of the defined"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 19,
+    "text": "ical lines indicate the sampling times. The amplitude cannot be measured exactly; instead the amplitude is approximated by the closest of the defined amplitudes represented by the horizontal lines. In Figure 1.08, sample values 1 and 4 will be an accurate estimate of the actual amplitude because the wave is touching an amplitude line. In contrast, samples 5 and 6 will not be accurate because the actual amplitude is approximately half way between the two closest defined values. 11 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Analogue and digital: For a computer to store sound files we need to get the continuous analogue sound waves into discrete binary values: 12 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 20,
+    "text": "alogue sound waves into discrete binary values: 12 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org An analogue sound wave is picked up by a microphone and sent to an Analogue to Digital (ADC) converter in the form of analogue electrical signals. The ADC converts the electrical signals into digital values which can be stored on a computer. Once in a digital format you can edit sounds with programs such as audacity. To play digital audio you convert the sound from digital values into analogue electrical signals using the DAC, these signals are then passed to a speaker that vibrating the speaker cone, moving the air to create sound waves and analogue noise. Digital audio: Sounds created on a computer exist as digital information encoded as audio files. Analogue to Digital"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 21,
+    "text": "sound waves and analogue noise. Digital audio: Sounds created on a computer exist as digital information encoded as audio files. Analogue to Digital Converter (ADC) Converts analogue sound into digital signals that can be stored on a computer. Digital to Analogue Converter (DAC) Converts digital signals stored on a computer into analogue sound that can be played through devices such as speakers. This section will cover how we record, store and transmit sound using computers. Sound waves in nature are continuous, this means they have an almost infinite amount of detail that you could store for even the shortest sound. This makes them very difficult to record perfectly, as computers can only store discrete data, data that has a limited number of data points Bandwidth: Bandwidth is also the amount of data that can be transmitted in a fixed amount of time. For digital devices, the"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 22,
+    "text": "ted number of data points Bandwidth: Bandwidth is also the amount of data that can be transmitted in a fixed amount of time. For digital devices, the bandwidth is usually expressed in bits per second(bps) or bytes per second. For analog devices, the bandwidth is expressed in cycles per second, or Hertz (Hz). Audio Bandwidth: 13 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Bandwidth is the ability of a recorded signal to be reproduced at varying degrees of resolution. Think of it like enlarging a low-resolution image versus a high-resolution image. After a certain point, enlarging a lower-resolution image will become pixelated and difficult to see, where the hi-resolution image will resize clearly. Like images, audio signals can have a limited bandwidth if recorded"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 23,
+    "text": "ixelated and difficult to see, where the hi-resolution image will resize clearly. Like images, audio signals can have a limited bandwidth if recorded digitally. Once a digital recording is made, the bandwidth is set in place. An analog recording is considered unlimited. Therefore, it can move to a higher and higher resolution without losing its original quality. Digital sound is broken down into thousands of samples per second. Each sound sample is stored as binary data. Digital audio quality Factors that affect the quality of digital audio include: sample rate - the number of audio samples captured every second sample resolution/ bit depth: - the number of bits assigned to each sample of sound bit rate - the number of bits used to store one second of sound Sound Sampling: amplitude of sound wave taken at different points in time measurement of value of analogue signal at regular time"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 24,
+    "text": "one second of sound Sound Sampling: amplitude of sound wave taken at different points in time measurement of value of analogue signal at regular time intervals/a point in time 14 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Sample rate The sample rate is how many samples, or measurements, of the sound are taken each second. The more samples that are taken, the more detail about where the waves rise and fall is recorded and the higher the quality of the audio. Also, the shape of the sound wave is captured more accurately. Each sample represents the amplitude of the digital signal at a specific point in time. The amplitude is stored as either an integer or a floating point number and encoded as a binary number. 15 Email: majidtahir61@gmail.com WhatsApp: +923004003666"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 25,
+    "text": "de is stored as either an integer or a floating point number and encoded as a binary number. 15 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org 1. The original analogue sound wave is a continuous set of points 2. ADC converts sound into digital data 3. DAC converts digital data into analogue sound, the analogue wave produced may differ significantly from the original sound wave. Sound Sampling So we should know by now that sound waves are continuous and computers can only store discrete data. How exactly does an Analogue to Digital Converter convert a continuous sound wave into discrete digital data? To do this we need to look at how computers sample sound. 16 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 26,
+    "text": "look at how computers sample sound. 16 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Sampling Rate - The number of samples taken per second A higher sampling rate means the waveform will be converted from analog to digital form more accurately. Sampling Resolution (bit depth): no. of bits assigned to each sample. The sampling resolution allows you to set the range of volumes storable for each sample. The quality of a sound produced using a sound sampler depends on the sampling rate and sampling resolution. The higher the sampling resolution (bit depth), the higher the quality of the audio. Higher sampling rate/resolution means larger file size Bit depth is the number of bits available for each sample. Sampling resolution (Bit depth) is usually 16 bits on a CD and 24"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 27,
+    "text": "n means larger file size Bit depth is the number of bits available for each sample. Sampling resolution (Bit depth) is usually 16 bits on a CD and 24 bits on a DVD. Bit Rate: number of bits required to store 1 second of sound. = × = × ℎ File Size = Sample Rate X Sample Resolution X Length of sound 17 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Calculating bit rate The bit rate is calculated using the formula: Frequency × bit depth × channels = bit rate A typical, uncompressed high-quality audio file has a sample rate of 44,100 samples per second, a sample resolution (bit depth) of 16 bits per sample and 2 channels of stereo audio. The bit rate for this file would be: 44,100 samples per second × 16 bits per sample × 2 channels = 1,411,200 bits per second (or 1,411.2"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 28,
+    "text": "tereo audio. The bit rate for this file would be: 44,100 samples per second × 16 bits per sample × 2 channels = 1,411,200 bits per second (or 1,411.2 kbps) A four-minute (240 second) song at this bit rate would create a file size of: 14,411,200 × 240 = 338,688,000 bits (or 40.37 megabytes) A common audio sample rate for music is 44,100 samples per second. The unit for the sample rate is hertz (Hz). 44,100 samples per second is 44,100 hertz or 44.1 kilohertz (kHz). Telephone networks and VOIP services can use a sample rate as low as 8 kHz. This uses less data to represent the audio. At 8 kHz, the human voice can still be heard clearly - but music at this sample rate would sound low quality. 18 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Sound Editing Simply recording"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 29,
+    "text": "03666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Sound Editing Simply recording sound and storing a digital representation is not enough for many applications. Once a digital representation of the sound has been stored in a file, it can be manipulated using sound-editing software. This will typically have features for: • combining sound from different sources • fading in or fading out the sound • editing the sound to remove noise and other imperfections. If you are interested in sound editing you can start editing your own music using a program called Audacity. Using Audacity you can create your own sound samples with different sample rates and sample resolutions, listening to the difference between them and noting the different file sizes. Features This is a list of features in Audacity, the free, open source,"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 30,
+    "text": "listening to the difference between them and noting the different file sizes. Features This is a list of features in Audacity, the free, open source, cross-platform audio editor. Recording Audacity can record live audio through a microphone or mixer, or digitize recordings from cassette tapes, records or minidiscs. With some sound cards, and on any Windows Vista, Windows 7 or Windows 8 machine, Audacity can also capture streaming audio. Import and Export Import sound files, edit them, and combine them with other files or new recordings. Export your recordings in many different file formats, including multiple files at once. Sound Quality Supports 16-bit, 24-bit and 32-bit (floating point) samples (the latter preserves samples in excess of full scale). Sample rates and formats are converted using high-quality re-sampling and dithering. Tracks with different sample rates or formats are"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 31,
+    "text": "f full scale). Sample rates and formats are converted using high-quality re-sampling and dithering. Tracks with different sample rates or formats are converted automatically in real time. Editing: Easy editing with Cut, Copy, Paste and Delete. Unlimited sequential Undo (and Redo) to go back any number of steps. Edit and mix large numbers of tracks. Multiple clips are allowed per track. Label tracks with selectable Sync-Lock Tracks feature for keeping tracks and labels synchronized. Draw Tool to alter individual sample points. Envelope Tool to fade the volume up or down smoothly. 19 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Automatic Crash Recovery in the event of abnormal program termination. Accessibility Tracks and selections can be fully manipulated using the"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 32,
+    "text": "qar.org Automatic Crash Recovery in the event of abnormal program termination. Accessibility Tracks and selections can be fully manipulated using the keyboard. Large range of keyboard shortcuts. Excellent support for JAWS, NVDA and other screen readers on Windows, and for VoiceOver on Mac. Effects Change the pitch without altering the tempo (or vice-versa). Remove static, hiss, hum or other constant background noises. Alter frequencies with Equalization, Bass and Treble, High/Low Pass and Notch Filter effects. Adjust volume with Compressor, Amplify, Normalize, Fade In/Fade Out and Adjustable Fade effects. Remove Vocals from suitable stereo tracks. Create voice-overs for podcasts or DJ sets using Auto Duck effect. Other built-in effects include: Echo Paulstretch (extreme stretch) Phaser Reverb Reverse Truncate Silence Wahwah. Run \"Chains\" of effects on a project or multiple files in"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 33,
+    "text": "include: Echo Paulstretch (extreme stretch) Phaser Reverb Reverse Truncate Silence Wahwah. Run \"Chains\" of effects on a project or multiple files in Batch Processing mode. Multimedia Container Formats: Contains different types of data Can be audio or video or both codecs This interleaves the different type of data The video is compressed into codecs E.g. .avi, .mov, .mp4, .ogg, .rm 1.3 Compression Compression is a useful tool for reducing file sizes. When images, sounds or videos are compressed, data is removed to reduce the file size. This is very helpful when streaming and downloadingfiles. Streamed music and downloadable files, such as MP3s, are usually between 128 kbps and 320 kbps - much lower than the 1,411 kbps of an uncompressed file. 20 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 34,
+    "text": "ed file. 20 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org Videos are also compressed when they are streamed over a network. Streaming HD video requires a high-speed internet connection. Without it, the user would experience buffering and regular drops in quality. HD video is usually around 3 mbps. SD is around 1,500 kbps. Compression can be lossy or lossless. Lossless compression: Lossless compression means that as the file size is compressed, the audio quality remains the same - it does not get worse. Also, the file can be restored back to its original state. FLAC and ALAC are open source lossless compression formats. Lossless compression can reduce file sizes by up to 50% without losing quality. Lossless Compression allows original data to be perfectly reconstructed"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 35,
+    "text": "ssless compression can reduce file sizes by up to 50% without losing quality. Lossless Compression allows original data to be perfectly reconstructed from compression. Run-length encoding: compression in which sequences with same data value in many consecutive values are stored as a single data value and count E.g. 00001234111111 can be written as (0-4)1234(1-6) Lossy compression: Lossy compression permanently removes data. For example, a WAV file compressed to an MP3 would be lossy compression. The bit rate could be set at 64 kbps, which would reduce the size and quality of the file. However, it would not be possible to recreate a 1,411 kbps quality file from a 64 kbps MP3. With lossy compression, the original bit depth is reduced to remove data and reduce the file size. The bit depth becomes variable. MP3 and AAC are lossy compressed audio file formats widely supported on different"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 36,
+    "text": "move data and reduce the file size. The bit depth becomes variable. MP3 and AAC are lossy compressed audio file formats widely supported on different platforms. MP3 and AAC are both patented codecs. Ogg Vorbis is an open source alternative for lossy compression. Lossy Compression is in which file accuracy is low, but file size is smaller than lossless Perceptual coding: works by reducing certain parts of a sound which are less audible to human hearing. Lossy Data Compression: These programs eliminate unnecessary bits of data Reduces data file size more than lossless Unable to get back original version Lossless Data Compression: Breaks data into smaller form of transmission Allows recreation of original 21 Email: majidtahir61@gmail.com WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org References:"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 37,
+    "text": "WhatsApp: +923004003666 www.majidtahir.com (1.2 Multimedia sound 1.3 Compression Computer Science 9618 with Majid Tahir at www.fiqar.org References: https://www.bbc.com/bitesize/guides/zqyrq6f/revision/2 https://en.wikipedia.org/wiki/Vector_graphics https://en.wikipedia.org/wiki/File:Bitmap_VS_SVG.svg https://www.corporate3design.com/blog/112/ http://etc.usf.edu/techease/win/images/what-is-the-difference-between-bitmap-and- vector-images/ https://www.klipsch.com/blog/digital-vs-analog-audio https://www.bbc.com/education/guides/z7vc7ty/revision/2 http://www.globalspec.com/reference/37829/203279/5-7-spatial-and-temporal- redundancy-in-mpeg https://robbfoxx.wordpress.com/2015/07/12/discussion-6-2-1-what-is-redundancy- temporal-redundancy-and-spatial-redundancy/ http://www.pcmag.com/encyclopedia/term/56086/spatial-redundancy"
+  },
+  {
+    "source_id": "d2e4a78eab93450ea7f4098ce058f7f9",
+    "filename": "file.pdf",
+    "chunk": 38,
+    "text": "7/12/discussion-6-2-1-what-is-redundancy- temporal-redundancy-and-spatial-redundancy/ http://www.pcmag.com/encyclopedia/term/56086/spatial-redundancy http://christmanwd.weebly.com/uploads/2/5/9/5/25956852/805063_orig.jpg https://microscope-microscope.org/microscope-info/image-resolution/ Cambridge International AS & A level by Silvia Langfield and Dave Duddell."
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 0,
+    "text": "Exploring the Differences Between RAM and ROM In the realm of computing, two fundamental components play pivotal roles in ensuring seamless functionality and data management – RAM (Random Access Memory) and ROM (Read-Only Memory). While both are types of computer memory, they serve distinct purposes and exhibit contrasting characteristics. In this article, we’ll examine the key differences between RAM and ROM, highlighting their unique attributes and contributions to a computing system’s overall performance. RAM: The Swift and Volatile Workhorse Random Access Memory, commonly known as RAM, is a type of volatile memory that stores data and machine code currently being used and processed by the computer’s CPU (Central Processing Unit). The term “random access” implies that any storage location in RAM can be directly accessed, allowing for swift read and write operations. Here are some key"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 1,
+    "text": "rm “random access” implies that any storage location in RAM can be directly accessed, allowing for swift read and write operations. Here are some key characteristics of RAM: 1. Volatility: RAM is volatile memory , meaning that its contents are erased when the power is turned off. This characteristic makes it ideal for temporary storage and quick data access during the computer’s operation. 2. Speed: RAM is significantly faster than other types of storage, such as hard drives or solid-state drives. This speed ensures quick retrieval of data for active processes, contributing to the system’s overall performance and responsiveness. 3. Usage: RAM is used to store data that the CPU needs to access quickly and frequently. This includes running applications, operating system processes, and actively used files. 4. Capacity: The capacity of RAM is typically measured in gigabytes (GB) or"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 2,
+    "text": "unning applications, operating system processes, and actively used files. 4. Capacity: The capacity of RAM is typically measured in gigabytes (GB) or terabytes (TB). Modern computers usually have several gigabytes of RAM to accommodate the demands of resource-intensive applications. Types of RAM 1. Static RAM: Static RAM , abbreviated as SRAM, employs a six-transistor memory cell to store a single bit of data. 2. Dynamic RAM: In contrast, Dynamic RAM , known as DRAM, utilizes a different approach. It stores a bit of data through a combination of transistors and capacitors, forming a DRAM memory cell. ROM: The Immutable Foundation Read-only memory, or ROM, is a non-volatile memory that stores data permanently and is primarily used to store firmware and essential system instructions. Unlike RAM, ROM retains its contents even when the power is turned off. Here are the key features of ROM:"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 3,
+    "text": "firmware and essential system instructions. Unlike RAM, ROM retains its contents even when the power is turned off. Here are the key features of ROM: 1. Non-volatility: ROM is non-volatile, making it ideal for storing critical instructions and firmware needed to boot up the computer. The data in ROM remains intact even when the system is powered down. 2. Immutability: ROM contents are generally read-only, meaning they cannot be easily modified or overwritten. This ensures that the fundamental instructions and data required for the system’s operation remain unchanged. 3. Usage: ROM is often used to store a computer’s BIOS (Basic Input/Output System) or firmware, which is essential for the system to initiate and load the operating system during startup. 4. Types of ROM: There are different types of ROM , including PROM (Programmable Read-Only Memory), EPROM (Erasable Programmable"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 4,
+    "text": "stem during startup. 4. Types of ROM: There are different types of ROM , including PROM (Programmable Read-Only Memory), EPROM (Erasable Programmable Read-Only Memory), and EEPROM (Electrically Erasable Programmable Read-Only Memory), each with varying levels of programmability and reusability. Types of ROM 1. Programmable ROM: Programmable ROM, or PRO, is a category of Read-Only Memory in which data is written after the memory chip’s creation and maintains its non-volatile nature. 2. Erasable Programmable ROM: Erasable Programmable ROM, known as EPROM, is another type of ROM. The data stored on this non-volatile memory chip can be erased by exposing it to high-intensity UV light, providing a degree of flexibility in data modification. 3. Electrically Erasable Programmable ROM: Electrically Erasable Programmable ROM, or EEPROM, is a distinct form of ROM. In this non-volatile memory"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 5,
+    "text": "3. Electrically Erasable Programmable ROM: Electrically Erasable Programmable ROM, or EEPROM, is a distinct form of ROM. In this non-volatile memory chip, data can be electrically erased through field electron emission, offering a more convenient method compared to UV light exposure. 4. Mask ROM: It is a specific type of ROM where the data is permanently written during the manufacturing of the memory chip. Unlike the programmable and erasable variants, Mask ROM’s data remains fixed, providing a stable and unalterable storage solution. RAM ROM Definition of RAM is Random Access Memory Definition of ROM is Read-only Memory RAM (Random Access Memory) is expensive when compared to ROM ROM is cheaper when compared to RAM. The speed of RAM (Random Access Memory) is higher when compared to ROM The speed of Read-only Memory (ROM) is slower when compared to RAM. RAM (Random Access Memory) has a"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 6,
+    "text": "om Access Memory) is higher when compared to ROM The speed of Read-only Memory (ROM) is slower when compared to RAM. RAM (Random Access Memory) has a higher capacity when compared to ROM ROM has a lower capacity compared to RAM Data in RAM can be modified, erased, or read. Data in ROM can only be read, it cannot be modified or erased. The data stored in RAM is used by the CPU (Central Processing Unit) to process current instructions The data stored in ROM is used to bootstrap the computer. Data stored on RAM can be accessed by the Central Processing Unit. If the CPU (Central Processing Unit) needs to access the data on ROM, first the data must be transferred to RAM, and then the CPU(Central Processing Unit) will be able to access the data. Data of RAM is very volatile, it will exist as long as there is no interruption in power. Data present in Read-Only Memory (ROM) is not volatile, it"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 7,
+    "text": "Data of RAM is very volatile, it will exist as long as there is no interruption in power. Data present in Read-Only Memory (ROM) is not volatile, it is permanent. Data will remain unchanged even when there is a disruption in the power supply. Static RAM vs. Dynamic RAM SRAM and DRAM , both falling under the category of volatile memory, face data loss in the event of a power outage. Despite this commonality, these two memory types exhibit significant distinctions, primarily rooted in their construction. In the case of SRAM, a flip-flop circuit is employed for each data bit’s storage. This circuit produces two stable states, denoted as 1 or 0, with the storage process requiring six transistors. Four transistors store the bit, while the remaining two manage access to the cell. Due to the multitude of transistors, SRAM chips exhibit a considerably lower capacity compared to DRAM chips of"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 8,
+    "text": "aining two manage access to the cell. Due to the multitude of transistors, SRAM chips exhibit a considerably lower capacity compared to DRAM chips of similar size. On the other hand, DRAM necessitates only one transistor and one capacitor for bit storage. The capacitor retains electrons, determining whether the bit is a 0 or 1, while the transistor serves as a switch for reading and altering the capacitor’s state. However, DRAM capacitors tend to leak electrons, leading to a loss of charge. As a result, periodic refreshing is essential to preserve data, impacting access speeds and increasing power consumption. Despite the architectural disparities, SRAM generally outperforms DRAM in terms of performance and power efficiency, especially during periods of inactivity. However, the trade-off lies in SRAM’s inability to store as much data as DRAM and its higher cost. The ensuing table"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 9,
+    "text": "ly during periods of inactivity. However, the trade-off lies in SRAM’s inability to store as much data as DRAM and its higher cost. The ensuing table highlights key differences between SRAM and DRAM. Feature SRAM DRAM Data Retention Retains data without the need for refreshing Requires periodic refreshing to retain data Constructi on Uses a flip-flop circuit for each data bit Utilizes one transistor and one capacitor per bit Stability More stable due to the flip-flop circuit Less stable; capacitors may leak electrons leading to data loss Transistor Count Requires six transistors per bit Requires one transistor per bit Access Speed Faster access times Slower access times, affected by refreshing Power Consumpt ion Generally lower power consumption, especially when idle Higher power consumption, especially during refresh cycles Capacity Lower capacity compared to DRAM of similar size"
+  },
+  {
+    "source_id": "e146871679e34ab2a0b3befe678c1d49",
+    "filename": "ramandrom-240127060655-3fa3fec8.pdf",
+    "chunk": 10,
+    "text": "consumption, especially when idle Higher power consumption, especially during refresh cycles Capacity Lower capacity compared to DRAM of similar size Higher capacity for a given chip size Cost More expensive Typically less expensive Conclusion: In essence, RAM and ROM are integral components of a computer’s memory hierarchy, each serving a distinct purpose in facilitating the seamless operation of a computing system. While RAM provides fast and volatile storage for active processes, ROM offers non-volatile and immutable storage for critical system instructions. Understanding the differences between these two types of memory is crucial for grasping the intricate workings of computers and appreciating the synergy that exists within their memory architecture. Comment here ."
+  }
+]
